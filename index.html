@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mind Renaissance Labs" />
-  <title>Mind Renaissance Labs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mind Renaissance Labs LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
+    * {
+      box-sizing: border-box;
     }
+
     body {
-      height: 100vh;
-      width: 100vw;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      min-height: 100vh;
-      min-width: 100vw;
       margin: 0;
-      padding: 0;
-    }
-    .center-half {
+      font-family: 'Inter', sans-serif;
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
       justify-content: center;
       align-items: center;
-      height: 50vh;
-      width: 100vw;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom, #003854, #000000);
     }
-    .center-text {
-      color: white;
-      font-size: 3rem;
-      font-family: Arial, Helvetica, sans-serif;
+
+	.mission {
+	  width: 80%;
+	  text-align: center;
+	}
+	
+	@media only screen and (max-width: 600px) {
+	  .mission {
+		width: 600px;
+	  }
+	}
+	
+	@media only screen and (min-width: 768px) {
+	  .mission {
+		width: 720px;
+	  }
+	}
+
+    .mission h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .mission p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #000;
       text-align: center;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 0 12px #fff, 0 0 24px #fff;
-      letter-spacing: 0.2em;
-      font-weight: bold;
+      padding: 30px 20px;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    }
+
+    .contact-button {
+      display: inline-block;
+      background-color: #f0f0f0;
+      color: #000;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background-color: #ddd;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .mission h2 {
+        font-size: 1.5rem;
+      }
+
+      .mission p {
+        font-size: 1rem;
+      }
+
+      header img {
+        max-height: 200px;
+      }
+
+      main {
+        padding: 40px 16px;
+      }
+
+      .contact-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="center-half">
-    <div class="center-text">COMING SOON</div>
-  </div>
+  <header>
+    <img src="company_logo.png" alt="Mind Renaissance Labs Logo">
+  </header>
+
+  <main>
+    <div class="mission">
+      <h2>Empowering Human Potential<br>Through Mindful Technology</h2>
+      <p>
+        At Mind Renaissance Labs LLC, we build digital tools to elevate awareness,
+        enhance mental clarity, and support personal growth. Our mobile applications
+        are designed with intention — crafted to cultivate mindfulness, well-being,
+        and a deeper connection to oneself.
+      </p>
+      <p>
+        Stay tuned — innovative experiences are in the works. We're shaping tools that
+        go beyond utility, offering users thoughtful, intuitive ways to navigate
+        their inner and outer worlds.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <a class="contact-button" href="mailto:mind.renaissance.labs@gmail.com">Contact Us</a>
+  </footer>
 </body>
-</html> 
+</html>
